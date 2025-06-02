@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import useProducts from "../Hooks/useProducts"
 import { MainContext } from '../ContextProvider';
 import { Link } from 'react-router-dom';
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 
 
 const Items = () => {
@@ -24,7 +26,10 @@ const Items = () => {
                             <div className='flex flex-col items-center'>
                                 <img src= {productItem.image} alt="" className='w-38 h-38 object-contain rounded-lg '/>
                                 <h2 className='text-sm font-semibold line-clamp-1 mt-7'>{productItem.title}</h2>
-                                <h2>{productItem.rating.rate}/5</h2>
+                                <div >
+                                    <Rating style={{ maxWidth: 250 }} value={productItem.rating.rate} readOnly />
+                                </div>
+                                {/* <h2>{productItem.rating.rate}/5</h2> */}
                                 <p className='text-[#11A75C]'><sup>$</sup>{productItem.price}</p>
                             </div>
                         </Link>

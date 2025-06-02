@@ -38,10 +38,7 @@ const ProductPage = () => {
 
                <button className='m-4 bg bg-orange-500 shadow-lg shadow-black-700 text-white rounded-xl w-[30vh] h-10 font-semibold hover:bg-orange-400 duration-300' onClick={(e) => addToCart(e, productItem)}>Add to Cart</button>
             </div>
-            
-
         </div>
-
     </div>
   )
 }

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
+    "@smastrom/react-rating": "^1.5.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/vite": "^4.1.8",
     "@tanstack/react-query": "^5.79.0",
